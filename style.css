@@ -1,67 +1,223 @@
 body{
-    background-color: rgb(32, 32, 34);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: rgb(32, 32, 32);
     overflow: hidden;
+    font-family: "Monaco", monospace;
+}
+
+.resources{
+    color:rgb(241, 240, 240);
+    font-family: "Monaco", monospace;
+    margin-top:135px;
+    margin-left:10px;
 }
 
 .header_text{
-    color:rgb(241, 240, 240)
+    color:rgb(241, 240, 240);
+    font-family: "Monaco", monospace;
+    background-color:rgb(43, 43, 43);
+    height: 90px;
+    width: 770px;
+    position: relative;
+    border-radius: 10px;
+    left: 375px;
+    margin-top: -8px;
 }
 
-.socialbtn{
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding: 0.5em 1em;
-    color:rgb(101, 103, 238);
-    background-color:rgb(198, 179, 248);
-    border: 10px solid rgb(101, 103, 238);
-    border-radius: 5px;
-    height:75px;
-    width: 175px;
-    transition: all 0.3s;
+.header{
+    font-family: "Monaco", monospace;
+    text-align: center;
+    transform:translateY(25px);
 }
 
-.socialbtn:hover {
-    transform: translateY(10px);
-    background-color:rgb(101, 103, 238);
-    color:rgb(233, 243, 247);
+.button_box{
+    background-color: rgb(43, 43, 43);
+    width: 350px;
+    height: 90px;
+    position: relative;
+    left: 1160px;
+    top: -91px;
+    border-radius: 10px;
+   
+}
+
+.button_box2{
+    color:rgb(241, 240, 240);
+    font-family: "Monaco", monospace;
+    background-color: rgb(43, 43, 43);
+    width: 350px;
+    height: 90px;
+    position: relative;
+    left: 10px;
+    top: -201px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
+.button_box2:hover{
+    cursor:pointer;
+    transform: translateY(3px);
+}
+
+.credits{
+    text-align: center;
+    transform:translateY(25px);
+
+}
+
+.main_container{
+    background-color: rgb(43, 43, 43);
+    width: 1500px;
+    height: 580px;
+    position: relative;
+    left: 10px;
+    top: -190px;
+    border-radius: 10px; 
+}
+
+.about_container{
+    background-color: rgb(43, 43, 43);
+    width: 1500px;
+    height: 570px;
+    position: relative;
+    left: 10px;
+    top: -790px;
+    border-radius: 10px; 
+    visibility: hidden;
+}
+
+.aboutdescription{
+    color:rgb(227, 227, 227);
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.aboutname{
+    margin-top: 40px;
+    color:rgb(241, 240, 240);
+}
+
+li{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in;
+    font-size: 1.3rem;
+    margin-right: 885px;
+}
+
+li:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 img {
     border-radius: 50%;
     margin-left: 5px;
     margin-right: 5px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     opacity: 0;
     display: none;
 }
 
 img.show{
-    opacity:1;
+    opacity:0.6;
     display:block;
+    transform: translateX(-10px);
 }
 
 img:hover {
-   transform: scale(1.25);
-  
+   transform: scale(1.05);
+   opacity:1;
 } 
 
+.img1{
+    height:300px;
+    width:460px;
+    display:block;
+    border-radius: 10px;
+    position:absolute;
+    left: 700px;
+    top: 110px;
+    box-shadow: 5px 5px 3px rgb(32, 32, 32);
+}
+
+.img1:hover{
+    opacity:0;
+}
+
 .socials{ 
-    
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: 30px;
-    transition: transform 0.5s ease;
+    width: 90px;
+    height: 360px;
+    position: absolute;
+    right: 10px;
+    top: 200px;
+    transition: all 0.3s ease;
+ 
 }
 
 .socials:hover{
-    transform: scale(1.25);
+    transform: scale(1.05);
+    
 }
 
+.snapchat{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
 
+.snapchat1:hover{
+    box-shadow: 2px 1px 3px rgb(241, 240, 240);
+}
+
+.discord{
+    position: absolute;
+    top: 60px;
+    right: 25px;
+}
+
+.discord1:hover{
+    box-shadow: 2px 1px 3px rgb(241, 240, 240);
+}
+
+.x{
+    position: absolute;
+    top: 110px;
+    right: 25px;
+}
+
+.x1:hover{
+    box-shadow: 2px 1px 3px rgb(241, 240, 240);
+}
+
+.git{
+    position: absolute;
+    top: 160px;
+    right: 25px;
+}
+
+.git1:hover{
+ box-shadow: 2px 1px 3px rgb(241, 240, 240);
+}
+
+.roblox{
+    position: absolute;
+    top: 210px;
+    right: 25px;
+}
+
+.roblox1:hover{
+    box-shadow: 2px 1px 3px rgb(241, 240, 240);
+}
+
+.youtube{
+    position: absolute;
+    top: 260px;
+    right: 25px;
+}
+
+.youtube1:hover{
+    box-shadow: 2px 1px 3px rgb(241, 240, 240);
+}
 
 
